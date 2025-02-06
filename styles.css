@@ -1,0 +1,100 @@
+body {
+
+margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    overflow: hidden;
+    background: linear-gradient(to bottom right, #ffffff 00%, #cc0000 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    background-color:  linear-gradient(to bottom right, #ffffff 00%, #cc0000 100%);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.title {
+    font-size: 4em;
+    margin-bottom: 10px;
+    font-family: 'Great Vibes', cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    animation: slideIn 1s ease-in-out;
+}
+
+.lovely-text {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.heart-gif {
+    width: 250px;
+    margin-bottom: 20px;
+    animation: bounce 1s infinite alternate;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+button {
+    background-color: #FF7F7F ;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 0 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: #FF7F7F ;
+    transform: scale(1.1);
+}
+
+.response {
+    font-size: 1.5em;
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to
